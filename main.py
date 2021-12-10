@@ -121,6 +121,38 @@ for i in error_lead_len:
 #  위의 테스크는 먼저 4999개만 0의 패딩을 붙이고 나머지는 제외하는식으로 전처리함
 # 딱 한개의 9 lead의 데이터가 존재한다..
 
+# ## 데이터 시각화
+# 특정 데이터의 12개 lead를 모두 차트로 출력한다.  
+# 각 lead들은 Moving average로 Data Smoothing 과정을 거친다.
+
+import matplotlib.pyplot as plt
+
+def view_lead(leads):
+    size = 5 # window size
+    
+    for key, lead in leads.items():
+        amplitude = []
+        
+#         for i in range(0, len(lead), 5):
+#             amplitude[i+1:i+5] = (amplitude[i]+amplitude[min(len(lead)-1, i+5)])/2
+
+        ## Smoothing (Moving Average)
+        for i in range(size, len(lead)-size):
+            window = lead[i-size:i+size+1]
+            amplitude.append(sum(window)/len(window))
+        time = np.arange(0, len(amplitude))
+        
+        plt.figure(num=1, dpi=100, facecolor='white', figsize=(10,1), linewidth=5.0)
+        plt.plot(time, amplitude, color='blue', linewidth=0.5)
+        
+        ax = plt.gca()
+        ax.axes.xaxis.set_visible(False)
+        plt.show()
+
+        
+view_lead(data)
+
+
 # # Dataset 생성
 
 train_dataset = torch.utils.data.TensorDataset(torch.tensor(train_data).float(), torch.tensor(train_labels))
