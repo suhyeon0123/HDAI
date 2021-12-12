@@ -59,28 +59,28 @@ python main.py --path [dataset path] --gpu [the number of gpu to use] --lr [lear
 ┃　┃　WaveformType - 파형 종류 ('Median', 'Rhythm')</br>
 ┃　┃　WaveformStartTime - 파형 시작 시간 [0]</br>
 ┃　┃　NumberofLeads - LeadData의 개수 (8, 11, 12)</br>
-┃　┃　SampleType - ? ['CONTINUOS_SAMPLES']</br>
-┃　┃　SampleBase - ? [500]</br>
-┃　┃　SampleExponent - ? [0]</br>
-┃　┃　HighPassFilter - ? (1, 16, 56, X)</br>
-┃　┃　LowPassFilter - ? (40, 150, X)</br>
-┃　┃　ACFilter - ? ('NONE', 60, X)</br>
+┃　┃　SampleType - ['CONTINUOS_SAMPLES']</br>
+┃　┃　SampleBase - [500]</br>
+┃　┃　SampleExponent - [0]</br>
+┃　┃　HighPassFilter - (1, 16, 56, X)</br>
+┃　┃　LowPassFilter - (40, 150, X)</br>
+┃　┃　ACFilter - ('NONE', 60, X)</br>
 ┃　┃　┏ LeadData - 리드 데이터 : NumberofLeads만큼의 개수로 이뤄진 리스트 형태로 돼있다.</br>
-┃　┃　┃　LeadByteCountTotal - ? (1200, 10000)</br>
+┃　┃　┃　LeadByteCountTotal - (1200, 10000)</br>
 ┃　┃　┃　LeadTimeOffset - 오프셋 [0]</br>
 ┃　┃　┃　LeadSampleCountTotal - WaveFormData의 데이터 개수(샘플 길이) (600, 5000)</br>
-┃　┃　┃　LeadAmplitudeUnitsPerBit - ? (-10, 4.88, 5)</br>
+┃　┃　┃　LeadAmplitudeUnitsPerBit - (-10, 4.88, 5)</br>
 ┃　┃　┃　LeadAmplitudeUnits - 진폭 단위 ['MICROVOLTS']</br>
 ┃　┃　┃　LeadHighLimit - 최댓값 (32767, 2147483647)</br>
 ┃　┃　┃　LeadLowLimit - 최솟값 (-32768, 268435456)</br>
 ┃　┃　┃　LeadID - 리드 할당 ID ('I', 'II', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'III', 'aVR', 'aVL', 'aVF')</br>
-┃　┃　┃　LeadOffsetFirstSample - ? [0]</br>
-┃　┃　┃　FirstSampleBaseline - ? [0]</br>
-┃　┃　┃　LeadSampleSize - ? [2]</br>
-┃　┃　┃　LeadOff - ? ('FALSE', 'TRUE')</br>
-┃　┃　┃　BaselineSway - ? ('FALSE', 'TRUE')</br>
-┃　┃　┃┃ExcessiveACNoise - ? ('FALSE', 'TRUE')</br>
-┃　┃　┃┃MuscleNoise - ? ('FALSE', 'TRUE')</br>
+┃　┃　┃　LeadOffsetFirstSample - [0]</br>
+┃　┃　┃　FirstSampleBaseline - [0]</br>
+┃　┃　┃　LeadSampleSize - [2]</br>
+┃　┃　┃　LeadOff - ('FALSE', 'TRUE')</br>
+┃　┃　┃　BaselineSway - ('FALSE', 'TRUE')</br>
+┃　┃　┃┃ExcessiveACNoise - ('FALSE', 'TRUE')</br>
+┃　┃　┃┃MuscleNoise - ('FALSE', 'TRUE')</br>
 ┃　┃　┃　LeadDataCRC32</br>
 ┃　┃　┃　WaveFormData - 파형 데이터. b64로 디코드하여 수치화할 수 있다.</br>
 ┃　┃　┗━</br>
@@ -88,6 +88,7 @@ python main.py --path [dataset path] --gpu [the number of gpu to use] --lr [lear
 ┗━</br>
 
 ### 구조 종류
+데이터 구조를 바탕으로 임의의 이름을 부여하였다.
 
 1. 2-Wave Normal</br>
     구조:</br>
