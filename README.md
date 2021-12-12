@@ -118,7 +118,7 @@ python main.py --path [dataset path] --gpu [the number of gpu to use] --lr [lear
     Simple 구조와 같은 구조를 가지나, 6, 7, 8번 리드의 데이터가 누락돼있다.</br>
 
     주의점:</br>
-    누락된 리드의 데이터를 어떻게 처리할 것인가? (해결 여부 모름)</br>
+    누락된 리드의 데이터를 어떻게 처리할 것인가? (해결)</br>
 
     사용 파일:</br>
     `train/arrhythmia/6_2_001267_ecg.xml`</br>
