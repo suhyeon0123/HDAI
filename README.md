@@ -43,6 +43,8 @@ python main.py --path [dataset path] --gpu [the number of gpu to use] --lr [lear
 -**-dropout**: drop out, type=float, default=0.3</br>
 **--batch_size**: batch size, type=int, default=32</br>
 **--training_epoch**: training epoch, type=int, default=100</br>
+**--test**: Using test</br>
+**--test_model_weights**: test model weights path</br>
 
 # 데이터 분석
 ## ECG
