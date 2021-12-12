@@ -166,22 +166,85 @@ python main.py --path [dataset path] --gpu [the number of gpu to use] --lr [lear
     `validation/arrhythmia/8_2_007743_ecg.xml`</br>
     `validation/arrhythmia/8_2_007824_ecg.xml`</br>
     `validation/arrhythmia/8_2_008124_ecg.xml`</br>
-
+    
 ## Label
 0. Normal sinus rhythm
-   
-1. Sinus tachycardia
-2. Atrial fibrillation
-3. Atrial flutter
-4. Premature atrial complex
-5. Ectopic atrial rhythm
-6. Supraventricular tachycardia
-7. Premature ventricular complex
-8. Idioventricular rhythm
-9.  Ventricular tachycardia
-10. 1st degree AVB
-11. 2nd degree AVB (Mobitz type 1)
-12. 2nd degree AVB (Mobitz type 2)
-13. 3rd degree (complete AV block)
-14. Sinus bradycardia
-15. Junctional rhythm
+1. Sinus tachycardia (1476개)
+2. Atrial fibrillation (2312개)
+3. Atrial flutter (58개)
+4. Premature atrial complex (5266개)
+5. Ectopic atrial rhythm (137개)
+6. Supraventricular tachycardia (0개)
+7. Premature ventricular complex (4562개)
+8. Idioventricular rhythm (0개)
+9. Ventricular tachycardia (1개)
+10. 1st degree AVB (1669개)
+11. 2nd degree AVB (Mobitz type 1) (12개)
+12. 2nd degree AVB (Mobitz type 2) (0개)
+13. 3rd degree (complete AV block) (2개)
+14. Sinus bradycardia (4345개)
+15. Junctional rhythm (241개)
+
+## Data Visualization
+ - 정상
+0. Normal sinus rhythm  
+![image](https://user-images.githubusercontent.com/58257896/145714689-06c0e6ba-ebfa-449b-ba2f-e070e8ef76de.png)
+
+ - 부정맥
+1. Sinus tachycardia  
+![image](https://user-images.githubusercontent.com/58257896/145714589-e559463a-b323-4750-b9bb-96777bb2558c.png)
+`train/arrhythmia/8_2_000001_ecg.xml`</br>
+
+2. Atrial fibrillation  
+![image](https://user-images.githubusercontent.com/58257896/145714805-062dfa28-ce7d-4ad8-8b10-d01426be3607.png)
+`train/arrhythmia/5_2_000439_ecg.xml`</br>
+
+3. Atrial flutter  
+![image](https://user-images.githubusercontent.com/58257896/145714906-612a76be-1e74-468c-818c-59e4a7e69a94.png)
+`train/arrhythmia/5_2_000843_ecg.xml`</br>
+
+4. Premature atrial complex  
+![image](https://user-images.githubusercontent.com/58257896/145715150-3c9f4e8c-a10b-41c7-a08a-c5239f92403c.png)
+`train/arrhythmia/5_2_002316_ecg.xml`</br>
+
+5. Ectopic atrial rhythm  
+![image](https://user-images.githubusercontent.com/58257896/145715246-feb48338-56a0-4b98-ad81-9c7d7da639ca.png)
+`train/arrhythmia/5_2_002172_ecg.xml`</br>
+
+6. Supraventricular tachycardia  
+데이터 없음
+
+7. Premature ventricular complex  
+![image](https://user-images.githubusercontent.com/58257896/145715308-7d812ad1-74e2-4b99-8ca1-445f0c7f0d6c.png)
+`train/arrhythmia/5_2_000506_ecg.xml`</br>
+
+8. Idioventricular rhythm  
+데이터 없음
+
+9. Ventricular tachycardia  
+![image](https://user-images.githubusercontent.com/58257896/145715367-65aaf8be-125f-48d9-97e4-35777154210c.png)
+`train/arrhythmia/5_2_001632_ecg.xml`</br>
+
+10. 1st degree AVB  
+![image](https://user-images.githubusercontent.com/58257896/145715495-a3737229-7ebc-4671-b005-7aaa33c22f57.png)
+`train/arrhythmia/8_2_003292_ecg.xml`</br>
+
+11. 2nd degree AVB (Mobitz type 1)  
+![image](https://user-images.githubusercontent.com/58257896/145715532-6ccf70d8-4f34-4a9c-9ebc-4e2dd4b41c60.png)
+`train/arrhythmia/8_2_004970_ecg.xml`</br>
+
+12. 2nd degree AVB (Mobitz type 2)  
+데이터 없음
+
+13. 3rd degree (complete AV block)  
+![image](https://user-images.githubusercontent.com/58257896/145715590-cada334b-8696-48bc-bc4b-a19719320929.png)
+![image](https://user-images.githubusercontent.com/58257896/145715616-097ac382-0097-4d62-ae1f-6ca97aea27b9.png)
+`train/arrhythmia/5_2_001920_ecg.xml` `train/arrhythmia/5_2_001980_ecg.xml`</br>
+
+14. Sinus bradycardia  
+![image](https://user-images.githubusercontent.com/58257896/145715656-66ca6551-9a5e-4906-911a-5b65d1292ac0.png)
+`train/arrhythmia/5_2_002518_ecg.xml`</br>
+
+15. Junctional rhythm  
+![image](https://user-images.githubusercontent.com/58257896/145715704-72fa7be7-d5e2-4d47-b45f-0127df93850a.png)
+`train/arrhythmia/5_2_001918_ecg.xml`</br>
